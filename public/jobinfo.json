@@ -1,0 +1,112 @@
+[
+      {
+        "id": 1,
+        "company_logo": "https://da4e1j5r7gw87.cloudfront.net/wp-content/uploads/sites/2560/2021/02/TEC-logo-Final-small.pngpng",
+        "job_title": "Web Developer",
+        "company_name": "ABC Company",
+        "remote_or_onsite": "Remote",
+        "location": "Anywhere",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$80,000",
+        "job_description": "We are seeking a skilled web developer to join our team...",
+        "job_responsibility": "Develop and maintain web applications...",
+        "educational_requirements": "Bachelor's degree in Computer Science...",
+        "experiences": "At least 3 years of experience in web development...",
+        "contact_information": {
+          "phone": "+1-555-1234",
+          "email": "jobs@abccompany.com"
+        }
+      },
+      {
+        "id": 2,
+        "company_logo": "https://img.freepik.com/premium-vector/world-tech-logo-creative-pixel-technology-digital-creative-design-concept_669794-445.jpg",
+        "job_title": "Software Engineer",
+        "company_name": "XYZ Inc.",
+        "remote_or_onsite": "Onsite",
+        "location": "New York City",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$100,000",
+        "job_description": "We are looking for a highly skilled software engineer...",
+        "job_responsibility": "Design, develop and maintain software applications...",
+        "educational_requirements": "Master's degree in Computer Science or related field...",
+        "experiences": "At least 5 years of experience in software development...",
+        "contact_information": {
+          "phone": "+1-555-5678",
+          "email": "careers@xyzinc.com"
+        }
+      },
+      {
+        "id": 3,
+        "company_logo": "https://cdn.dribbble.com/users/10559051/screenshots/17684767/media/c967b56a33adc92a68ff0a6672549ca3.jpg?compress=1&resize=400x300",
+        "job_title": "Data Scientist",
+        "company_name": "123 Corp.",
+        "remote_or_onsite": "Remote",
+        "location": "Anywhere",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$90,000",
+        "job_description": "We are seeking a talented data scientist to join our team...",
+        "job_responsibility": "Analyze and interpret complex data sets...",
+        "educational_requirements": "PhD in Statistics, Mathematics or related field...",
+        "experiences": "At least 2 years of experience in data analysis...",
+        "contact_information": {
+          "phone": "+1-555-9012",
+          "email": "hr@123corp.com"
+        }
+      },
+      {
+        "id": 4,
+        "company_logo": "https://dynamic.brandcrowd.com/asset/logo/cb52f9e5-32ed-4f83-b20a-3aa171749462/logo-search-grid-1x?logoTemplateVersion=1&v=638095294425300000",
+        "job_title": "Marketing Specialist",
+        "company_name": "456 Inc.",
+        "remote_or_onsite": "Onsite",
+        "location": "San Francisco",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$70,000",
+        "job_description": "We are seeking a creative and strategic marketing specialist...",
+        "job_responsibility": "Develop and execute marketing campaigns...",
+        "educational_requirements": "Bachelor's degree in Marketing, Communications or related field...",
+        "experiences": "At least 3 years of experience in marketing...",
+        "contact_information": {
+          "phone": "+1-555-3456",
+          "email": "jobs@456inc.com"
+        }
+      },
+      {
+        "id": 5,
+        "company_logo": "https://img.freepik.com/free-vector/abstract-logo-flame-shape_1043-44.jpg",
+        "job_title": "Graphic Designer",
+        "company_name": "Creative Agency",
+        "remote_or_onsite": "Onsite",
+        "location": "Los Angeles",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$60,000 - $80,000",
+        "job_description": "We are looking for a talented graphic designer to join our team...",
+        "job_responsibility": "Design and produce various visual assets...",
+        "educational_requirements": "Bachelor's degree in Graphic Design or related field...",
+        "experiences": "At least 2 years of experience in graphic design...",
+        "contact_information": {
+          "phone": "+1-555-6789",
+          "email": "jobs@creativeagency.com"
+        }
+      },
+      {
+        "id": 6,
+        "company_logo": "https://static.vecteezy.com/system/resources/previews/008/214/517/original/abstract-geometric-logo-or-infinity-line-logo-for-your-company-free-vector.jp",
+        "job_title": "Sales Representative",
+        "company_name": "ABC Corporation",
+        "remote_or_onsite": "Remote",
+        "location": "Anywhere",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$50,000 - $70,000",
+        "job_description": "We are seeking a dynamic and results-driven sales representative...",
+        "job_responsibility": "Develop and maintain relationships with clients...",
+        "educational_requirements": "Bachelor's degree in Business or related field...",
+        "experiences": "At least 2 years of experience in sales...",
+        "contact_information": {
+          "phone": "+1-555-2345",
+          "email": "hr@abccorp.com"
+        }
+      }
+]
+
+  

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Software Engineer",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Deus_computer_engineering.png/1200px-Deus_computer_engineering.png",
+        "total": 560
+    },
+    {
+        "id": 2,
+        "name": "Data Scientist",
+        "logo": "https://img.freepik.com/premium-vector/data-science-logo-template_567288-95.jpg?w=2000",
+        "total": 870
+    },
+    {
+        "id": 3,
+        "name": "UX Designer",
+        "logo": "https://graphstormstudio.com/images/portfolio-items/ui-ux-mentor-thumbnail.webp",
+        "total": 601
+    },
+    {
+        "id": 4,
+        "name": "Frontend Developer",
+        "logo": "https://static.invozone.com/uploads/2021/08/website-development.jpg",
+        "total": 570
+    }
+]
