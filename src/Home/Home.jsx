@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Lottie from "lottie-react";
 import reader from "../assets/lotti.json";
 import { useLoaderData } from "react-router-dom";
 import JobCatogory from "../Component/JobCatgory/JobCatogory";
+import FeatureJob from "../Component/FeatureJob/FeatureJob";
 
 const Home = () => {
-  const jobs = useLoaderData()
-  console.log(jobs)
+  const jobs = useLoaderData();
+  console.log(jobs);
   return (
     <div className="container">
       <div
@@ -21,8 +22,8 @@ const Home = () => {
             <span> You with Your Dream Job</span>
           </h2>
           <h2>
-            <span className="fw-semibold text-info">The Ultimate Job </span>Search
-            Platform
+            <span className="fw-semibold text-info">The Ultimate Job </span>
+            Search Platform
           </h2>
           <p>
             Comprehensive Career Resources: In addition to job listings, we
@@ -40,12 +41,27 @@ const Home = () => {
       </div>
       <div className="mt-3">
         <h1 className="text-center fw-bold">Job Category List</h1>
-        <p className="text-center">Explore thousands of job opportunities with all the information you need. Its your future </p>
+        <p className="text-center">
+          Explore thousands of job opportunities with all the information you
+          need. Its your future{" "}
+        </p>
       </div>
       <div className="d-flex flex-column flex-md-row gap-2 justify-content-center align-items-center">
-        {
-          jobs.map((job)=> <JobCatogory key={job.id} job={job}></JobCatogory>)
-        }
+        {jobs.map((job) => (
+          <JobCatogory key={job.id} job={job}></JobCatogory>
+        ))}
+      </div>
+
+      {/* //Featured job section */}
+      <div className="mt-4">
+        <div className="text-center">
+        <h1 className="fw-bold">Featured Jobs</h1>
+        <p>
+          Explore thousands of job opportunities with all the information you
+          need. Its your future
+        </p>
+        <FeatureJob></FeatureJob>
+        </div>
       </div>
     </div>
   );

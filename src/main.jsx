@@ -7,12 +7,14 @@ import Statistics from './Component/Statistics/Statistics'
 import AppliedJobs from './Component/Applied Jobs/AppliedJobs'
 import Blog from './Component/Blog/Blog'
 import Home from './Home/Home'
+import { getJobDetailsData } from './Loader/getJobDetailsData'
 
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App></App>,
+    loader: getJobDetailsData,
     children: [
       {
         path:'/',
