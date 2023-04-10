@@ -27,7 +27,7 @@ const FeatureJob = () => {
                             <p><FontAwesomeIcon className='me-2' icon={faMapLocationDot}></FontAwesomeIcon>{job.location}</p>
                             <p>{job.salary}</p>
                         </div>
-                        <Link to={`/job/${job.id}`}>View Details</Link>
+                        <Link className='btn btn-info fw-semibold text-white w-50 mx-auto' to={`/job/${job.id}`}>View Details</Link>
                         {/* <Link to={`/job/${job.id}`}><button>View Details</button></Link> */}
                     </div>
                 )

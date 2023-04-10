@@ -1,0 +1,10 @@
+.coustomImg {
+  /* background-image: url("ANd9GcTlEFD7jbWPh9tQrMs3EFmTefpePHPmuTCkHzM6OkvHh8Zn8x04fZIKlxKqSX86dOgwbmU");
+  background-size: cover;
+  background-position: center; */
+  background-color: green;
+  background-image: url('https://media.istockphoto.com/id/1338579925/vector/geometric-background-of-squares-and-dots.jpg?s=612x612&w=0&k=20&c=SZJsLHWoh2rTHRJP5bSss3a7xuY6GCE3iFLUDW2t0Q0=');
+  background-size: cover;
+  width: auto;
+  height: 300px;
+}
