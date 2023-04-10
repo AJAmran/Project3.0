@@ -58,7 +58,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <footer class="footer fixed-bottom shadow">
+      <footer class="footer fixed-bottom shadow mt-5 bg-white">
         <div class="container text-center p-3">
           <span class="text-muted">All right Reserv © JobSizzle</span>
         </div>

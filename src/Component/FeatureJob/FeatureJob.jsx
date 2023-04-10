@@ -12,7 +12,7 @@ const FeatureJob = () => {
     console.log(jobsToShow)
 
     return (
-        <div className='row gap-2 justify-content-center ms-2'>
+        <div className='row gap-2 justify-content-center ms-2 mb-5 mt-4'>
             {
                 jobsToShow.map((job)=>(
                     <div key={job.id} className='card col-5 p-3'>         
@@ -36,7 +36,7 @@ const FeatureJob = () => {
             }
             {
                 !showAll && (
-                    <button onClick={() => setShowAll(true)}>Show All</button>
+                    <button className='btn btn-info text-white fw-bold w-50 mb-5' onClick={() => setShowAll(true)}>Show All</button>
                 )
             }
         </div>
