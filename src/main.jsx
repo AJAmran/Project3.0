@@ -1,44 +1,47 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Statistics from './Component/Statistics/Statistics'
-import AppliedJobs from './Component/Applied Jobs/AppliedJobs'
-import Blog from './Component/Blog/Blog'
-import Home from './Home/Home'
-import { getJobDetailsData } from './Loader/getJobDetailsData'
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Statistics from "./Component/Statistics/Statistics";
+import AppliedJobs from "./Component/Applied Jobs/AppliedJobs";
+import Blog from "./Component/Blog/Blog";
+import Home from "./Home/Home";
+import { getJobDetailsData } from "./Loader/getJobDetailsData";
+import Job from "./Component/Job/Job";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App></App>,
     loader: getJobDetailsData,
     children: [
       {
-        path:'/',
+        path: "/",
         element: <Home></Home>,
-        loader:()=> fetch('JobCatagoris.json'),
+        loader: () => fetch("JobCatagoris.json"),
       },
       {
-        path:'/statistics',
-        element: <Statistics></Statistics>
+        path: "/statistics",
+        element: <Statistics></Statistics>,
       },
       {
-        path: '/apjob',
+        path: "/apjob",
         element: <AppliedJobs></AppliedJobs>,
       },
       {
-        path: '/blog',
-        element: <Blog></Blog>
-      }
-    ]
-  }
-])
+        path: "/job/:id",
+        element: <Job></Job>,
+        loader: getJobDetailsData,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
+      },
+    ],
+  },
+]);
 
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router}></RouterProvider>
-)
+);

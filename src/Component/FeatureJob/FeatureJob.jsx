@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { JobsContext } from '../../App';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation, faMapLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 
 const FeatureJob = () => {
@@ -19,14 +20,15 @@ const FeatureJob = () => {
                         <h4 className='mt-0'>{job.job_title}</h4>
                         <p>{job.company_name}</p>
                         <div className='d-flex gap-2 justify-content-center mb-1'>
-                            <button className=''>Remote</button>
-                            <button>Full Time</button>
+                            <button className=''>{job.remote_or_onsite}</button>
+                            {/* <button>Full Time</button> */}
                         </div>
                         <div className='d-flex gap-3 justify-content-center'>
                             <p><FontAwesomeIcon className='me-2' icon={faMapLocationDot}></FontAwesomeIcon>{job.location}</p>
                             <p>{job.salary}</p>
                         </div>
-                        <button>View Details</button>
+                        <Link to={`/job/${job.id}`}>View Details</Link>
+                        {/* <Link to={`/job/${job.id}`}><button>View Details</button></Link> */}
                     </div>
                 )
 

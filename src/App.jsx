@@ -13,7 +13,6 @@ export const JobsContext = createContext([]);
 
 function App() {
   const allJobs = useLoaderData()
-  console.log(allJobs)
   return (
       <div className="App">
         <JobsContext.Provider value={allJobs}>

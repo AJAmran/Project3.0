@@ -4,6 +4,7 @@ import reader from "../assets/lotti.json";
 import { useLoaderData } from "react-router-dom";
 import JobCatogory from "../Component/JobCatgory/JobCatogory";
 import FeatureJob from "../Component/FeatureJob/FeatureJob";
+import Job from "../Component/Job/Job";
 
 const Home = () => {
   const jobs = useLoaderData();
@@ -47,9 +48,14 @@ const Home = () => {
         </p>
       </div>
       <div className="d-flex flex-column flex-md-row gap-2 justify-content-center align-items-center">
-        {jobs.map((job) => (
+        { Array.isArray(jobs)? 
+          jobs.map((job)=> <JobCatogory   job={job}key={job.id}></JobCatogory>): ''
+        }
+        {/* {
+        jobs.map(job => (
           <JobCatogory key={job.id} job={job}></JobCatogory>
-        ))}
+
+        ))} */}
       </div>
 
       {/* //Featured job section */}
