@@ -20,7 +20,7 @@ const FeatureJob = () => {
                         <h4 className='mt-0'>{job.job_title}</h4>
                         <p>{job.company_name}</p>
                         <div className='d-flex gap-2 justify-content-center mb-1'>
-                            <button className=''>{job.remote_or_onsite}</button>
+                            <button className='btn btn-outline-info'>{job.remote_or_onsite}</button>
                             {/* <button>Full Time</button> */}
                         </div>
                         <div className='d-flex gap-3 justify-content-center'>

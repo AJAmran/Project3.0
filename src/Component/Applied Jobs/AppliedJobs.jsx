@@ -19,7 +19,7 @@ const AppliedJobs = () => {
     console.log(newArray);
     
     return (
-        <div>
+        <div className='container'>
             <h1>this is applied job</h1>
             {
                 newArray.map((job) => <SingleAppliedJob key={job.id} job={job}></SingleAppliedJob>)
