@@ -15,7 +15,7 @@ const FeatureJob = () => {
         <div className='row gap-2 justify-content-center ms-2 mb-5 mt-4'>
             {
                 jobsToShow.map((job)=>(
-                    <div key={job.id} className='card col-5 p-3'>         
+                    <div key={job.id} className='card col-11 col-md-5 p-3'>         
                         <img className='rounded w-100' src={job.company_logo} alt="" height="180px" />
                         <h4 className='mt-0'>{job.job_title}</h4>
                         <p>{job.company_name}</p>

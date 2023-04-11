@@ -51,14 +51,7 @@ const Home = () => {
         { Array.isArray(jobs)? 
           jobs.map((job)=> <JobCatogory   job={job}key={job.id}></JobCatogory>): ''
         }
-        {/* {
-        jobs.map(job => (
-          <JobCatogory key={job.id} job={job}></JobCatogory>
-
-        ))} */}
       </div>
-
-      {/* //Featured job section */}
       <div className="mt-4">
         <div className="text-center">
         <h1 className="fw-bold">Featured Jobs</h1>
