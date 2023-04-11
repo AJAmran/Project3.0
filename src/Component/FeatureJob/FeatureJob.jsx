@@ -36,7 +36,7 @@ const FeatureJob = () => {
             }
             {
                 !showAll && (
-                    <button className='btn btn-info text-white fw-bold w-50 mb-5' onClick={() => setShowAll(true)}>Show All</button>
+                    <button className='btn btn-info text-white fw-bold w-25 mb-5' onClick={() => setShowAll(true)}>Show All</button>
                 )
             }
         </div>

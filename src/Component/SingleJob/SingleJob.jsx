@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './SingleCard.css'
 
-const SingleJob = ({item}) => {
+const SingleJob = ({item, handelAddToCart}) => {
     return (
         <div>
             <div className='coustomImg d-flex justify-content-center align-items-center fs-4 fw-bold'>Job Details</div>
@@ -23,7 +23,7 @@ const SingleJob = ({item}) => {
                     <hr className='mt-0'/>
                     <p><span className='fw-bold'><FontAwesomeIcon className='me-1' icon={faPhone}></FontAwesomeIcon>Phone: </span>{item.contact_information.phone}</p>
                     <p><span className='fw-bold'><FontAwesomeIcon className='me-1' icon={faEnvelope}></FontAwesomeIcon>Email: </span>{item.contact_information.email}</p>
-                    <button className='btn btn-info fw-semibold text-white'>Apply Now</button>
+                    <button onClick={() => handelAddToCart(item)} className='btn btn-info fw-semibold text-white'>Apply Now</button>
                  </div>
             </div>
         </div>

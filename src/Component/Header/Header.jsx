@@ -51,9 +51,10 @@ const Header = () => {
                   blog
                 </Link>
               </div>
+              <Link to='/'>
               <button className="btn btn-info text-white fs-5 fw-semibold">
                 Start Applying
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
