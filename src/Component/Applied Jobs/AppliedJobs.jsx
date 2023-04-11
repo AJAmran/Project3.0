@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { CartContext, JobsContext } from '../../App';
 import { getStoredCart } from '../../Utils/FeakDb';
 import SingleAppliedJob from '../SingleAppliedJob/SingleAppliedJob';
+import '../SingleAppliedJob/SingleAppliedJob'
 
 const AppliedJobs = () => {
     const allJobs = useContext(JobsContext)
@@ -19,8 +20,10 @@ const AppliedJobs = () => {
     console.log(newArray);
     
     return (
-        <div className='container'>
-            <h1>this is applied job</h1>
+        <div className='mb-5'>
+            <div className='coustomImg d-flex align-items-center justify-content-center'>
+            <h4>Applied Jobs</h4>
+            </div>
             {
                 newArray.map((job) => <SingleAppliedJob key={job.id} job={job}></SingleAppliedJob>)
             }

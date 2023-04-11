@@ -9,11 +9,13 @@ import Blog from "./Component/Blog/Blog";
 import Home from "./Home/Home";
 import { getJobDetailsData } from "./Loader/getJobDetailsData";
 import Job from "./Component/Job/Job";
+import ErrorPage from "./Component/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage>,
     loader: getJobDetailsData,
     children: [
       {
