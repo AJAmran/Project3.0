@@ -9,7 +9,10 @@ const FilteredJob = ({job}) => {
             <div className='w-50'>
             <h5>{job_title}</h5>
             <p>{company_name}</p>
-            <button className='btn btn-outline-info'>{remote_or_onsite}</button>
+           <div className='d-flex gap-2'>
+           <button className={remote_or_onsite === "Remote" ? "btn btn-info": "btn btn-outline-info"}>{remote_or_onsite}</button>
+            <button className={remote_or_onsite === "Onsite" ? "btn btn-info": "btn btn-outline-info"}>{remote_or_onsite}</button>
+           </div>
             <div className='d-flex gap-3'>
             <p>{location}</p>
             <p>{salary}</p>

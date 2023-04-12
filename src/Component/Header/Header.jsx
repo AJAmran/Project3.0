@@ -1,4 +1,5 @@
 import React from "react";
+import { Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -51,10 +52,11 @@ const Header = () => {
                   blog
                 </Link>
               </div>
-              <Link to='/'>
-              <button className="btn btn-info text-white fs-5 fw-semibold">
-                Start Applying
-              </button></Link>
+              <Link to="/">
+                <button className="btn btn-info text-white fs-5 fw-semibold">
+                  Start Applying
+                </button>
+              </Link>
             </div>
           </div>
         </div>
